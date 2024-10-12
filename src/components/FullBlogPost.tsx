@@ -31,16 +31,16 @@ const POSTS: Omit<BlogPostContent, "content">[] = [
       id: "2",
       title: "Advanced State Management Patterns in React with TypeScript 🧠",
       author: "Priyansh Singh",
-      date: "Tue Dec 5 2024",
+      date: "Thu Oct 3 2024",
       readTime: "10 min read",
       summary: "Explore advanced state management techniques in React using TypeScript. Learn how to create type-safe, scalable, and maintainable state management solutions. This guide covers custom hooks, context optimization, and integrating external state management libraries with TypeScript for complex React applications.",
       tags: ["react", "typescript", "statemanagement", "hooks", "context", "advancedpatterns"]
     },
     {
       id: "3",
-      title: "Unlocking the Power of React Server Components: A Practical Guide",
+      title: "Understanding React Server Components: A Practical Guide",
       author: "Priyansh Singh",
-      date: "Sat Oct 12 2024",
+      date: "Thu Sept 5 2024",
       readTime: "6 min read",
       summary: "React Server Components (RSC) are revolutionizing how we approach server-side rendering in React applications. This guide will walk you through what they are, their benefits, and how to implement them in your projects...",
       tags: ["react", "servercomponents", "webdevelopment", "javascript", "frontend"]
@@ -72,7 +72,7 @@ const FullBlogPost: React.FC = () => {
   }
 
   return (
-    <div className="min-h-screen bg-white dark:bg-black text-black dark:text-white">
+    <div className="min-h-screen bg-gray-100 dark:bg-black text-black dark:text-white">
       <Header />
       <Navbar />
       <main className="max-w-4xl mx-auto px-4 py-8">

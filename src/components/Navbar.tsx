@@ -26,7 +26,7 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className="w-full bg-white dark:bg-black border-y border-gray-200 dark:border-gray-800">
-      <div className="w-[58%] mx-auto">
+      <div className="w-[53%] mx-auto">
         <div className="flex justify-between items-center h-16">
           <Link
             to="/"
@@ -56,18 +56,24 @@ const Navbar: React.FC = () => {
             <a
               href="https://github.com/leviackerman05"
               className="text-gray-800 dark:text-white hover:text-gray-600 dark:hover:text-gray-300"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <FaGithub />
             </a>
             <a
               href="https://www.instagram.com/priyanshmusicc/"
               className="text-gray-800 dark:text-white hover:text-gray-600 dark:hover:text-gray-300"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <FaInstagram />
             </a>
             <a
               href="https://x.com/priyansh0510"
               className="text-gray-800 dark:text-white hover:text-gray-600 dark:hover:text-gray-300"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <FaTwitter />
             </a>
@@ -92,7 +98,7 @@ const Navbar: React.FC = () => {
                   }`}
                 >
                   {darkMode ? (
-                    <FaSun className="text-yellow-600 text-xs" />
+                    <FaSun className="text-black text-xs" />
                   ) : (
                     <FaMoon className="text-white text-xs" />
                   )}

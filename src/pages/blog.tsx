@@ -7,20 +7,28 @@ import Footer from "../components/Footer";
 const POSTS = [
   {
     id: "1",
-    title: "Re-thinking styling in build time with react-native-ustyle 🐱",
-    date: "Sat Feb 24 2024",
-    readTime: "5 min read",
-    summary: "Introducing react-native-ustyle that challenges the traditional way of styling in react native. Since react-native's initial launch in 2015, there have been numerous styling libraries built to simplify the styling of components...",
-    tags: ["compiletime", "css-in-js", "reactnative", "styling", "buildtime"]
+    title: "Learning Next.js 13 App Router: A Comprehensive Guide 🚀",
+    date: "Sat Oct 12 2024",
+    readTime: "8 min read",
+    summary: "Dive deep into Next.js 13's new App Router, exploring its powerful features and best practices. Learn how to leverage file-based routing, React Server Components, and advanced concepts through a real-world cover letter generator project. Discover how the App Router revolutionizes React application structure and performance...",
+    tags: ["nextjs", "approuter", "webdevelopment", "react", "servercomponents", "routing"]
   },
   {
     id: "2",
-    title: "Using NativeBase v3 The Right Way!",
-    date: "Thu Oct 14 2021",
-    readTime: "7 min read",
-    summary: "NativeBase is a component library that enables devs to build universal design systems. It is built on top of React Native, offering cross-platform components for mobile and web applications...",
-    tags: ["javascript", "reactnative", "react", "nativebase"]
+    title: "Advanced State Management Patterns in React with TypeScript 🧠",
+    date: "Tue Dec 5 2024",
+    readTime: "10 min read",
+    summary: "Explore advanced state management techniques in React using TypeScript. Learn how to create type-safe, scalable, and maintainable state management solutions. This guide covers custom hooks, context optimization, and integrating external state management libraries with TypeScript for complex React applications.",
+    tags: ["react", "typescript", "statemanagement", "hooks", "context", "advancedpatterns"]
   },
+  {
+    id: "3",
+    title: "Unlocking the Power of React Server Components: A Practical Guide",
+    date: "Sat Oct 12 2024",
+    readTime: "6 min read",
+    summary: "React Server Components (RSC) are revolutionizing how we approach server-side rendering in React applications. This guide will walk you through what they are, their benefits, and how to implement them in your projects...",
+    tags: ["react", "servercomponents", "webdevelopment", "javascript", "frontend"]
+  }
 ];
 
 const Blog: React.FC = () => {

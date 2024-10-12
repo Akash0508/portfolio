@@ -54,19 +54,19 @@ const Navbar: React.FC = () => {
           </Link>
           <div className="flex items-center space-x-4">
             <a
-              href="#"
+              href="https://github.com/leviackerman05"
               className="text-gray-800 dark:text-white hover:text-gray-600 dark:hover:text-gray-300"
             >
               <FaGithub />
             </a>
             <a
-              href="#"
+              href="https://www.instagram.com/priyanshmusicc/"
               className="text-gray-800 dark:text-white hover:text-gray-600 dark:hover:text-gray-300"
             >
               <FaInstagram />
             </a>
             <a
-              href="#"
+              href="https://x.com/priyansh0510"
               className="text-gray-800 dark:text-white hover:text-gray-600 dark:hover:text-gray-300"
             >
               <FaTwitter />

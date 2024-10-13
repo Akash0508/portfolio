@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar';
 import Header from '../components/Header';
 import Footer from '../components/Footer'
 import FeaturedPost from '../components/FeaturedPost';
+import LatestProjects from '../components/LatestProjects';
 
 const Home: React.FC = () => {
   return (
@@ -11,6 +12,7 @@ const Home: React.FC = () => {
       <Navbar />
       <main className="max-w-6xl mx-auto px-4 mt-8">
         <FeaturedPost />
+        <LatestProjects />
       </main>
       <Footer />
     </div>

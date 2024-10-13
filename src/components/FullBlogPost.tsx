@@ -17,7 +17,7 @@ interface BlogPostContent {
   content: string;
 }
 
-const POSTS: Omit<BlogPostContent, "content">[] = [
+export const POSTS: Omit<BlogPostContent, "content">[] = [
     {
       id: "1",
       title: "Learning Next.js 13 App Router: A Comprehensive Guide 🚀",

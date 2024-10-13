@@ -36,9 +36,12 @@ const Blog: React.FC = () => {
     <div className="min-h-screen bg-gray-100 dark:bg-black text-gray-800 dark:text-white">
       <Header />
       <Navbar />
+      <main className="max-w-4xl mx-auto px-4 py-8">
+      <h1 className="text-4xl font-bold mb-8">Blogs</h1>
       {POSTS.map((post) => (
         <BlogPost key={post.id} {...post} />
       ))}
+      </main>
       <Footer />
     </div>
   );

@@ -10,7 +10,7 @@ const About: React.FC = () => {
       <Navbar />
       <main className="container max-w-4xl mx-auto px-4 py-8">
         <h1 className="text-4xl font-bold mb-6">Priyansh Singh</h1>
-        <div className="space-y-4">
+        <div className="space-y-4 text-lg">
           <p>
             Hey there 👋, I'm a passionate software developer with a focus on
             creating high-quality, open-source tools for the development

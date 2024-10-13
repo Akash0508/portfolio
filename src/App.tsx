@@ -4,8 +4,7 @@ import Home from './pages/home';
 import About from './pages/about';
 import Blog from './pages/blog';
 import FullBlogPost from './components/FullBlogPost';
-// import Projects from './pages/projects';
-import Navbar from './components/Navbar';
+import Projects from './pages/project';
 
 const App: React.FC = () => {
   return (
@@ -15,7 +14,7 @@ const App: React.FC = () => {
           <Route path="/about" element={<About />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:id" element={<FullBlogPost />} />
-          {/* <Route path="/projects" element={<Projects />} /> */}
+          <Route path="/projects" element={<Projects />} />
         </Routes>
     </Router>
   );

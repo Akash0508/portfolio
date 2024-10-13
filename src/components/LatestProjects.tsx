@@ -21,7 +21,7 @@ const PROJECTS = [
     summary:
       "Personal portfolio website showcasing projects and skills using React.",
     tags: ["react", "javascript", "css", "responsive"],
-    link: "#", // Replace with your portfolio link when available
+    link: "https://priyansh-singh.vercel.app/",
   },
 ];
 

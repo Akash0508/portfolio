@@ -39,22 +39,6 @@ export const projects: Project[] = [
   },
   {
     id: '3',
-    title: 'Todo List',
-    image: todolistImage,
-    summary: 'Simple and efficient todo list application built with JavaScript.',
-    tags: ['javascript', 'html', 'css', 'localstorage'],
-    link: 'https://to-do-list-gilt-rho.vercel.app/'
-  },
-  {
-    id: '4',
-    title: 'Meme Generator',
-    image: memeGeneratorImage,
-    summary: 'Create custom memes easily with this JavaScript and TypeScript app.',
-    tags: ['javascript', 'typescript', 'html', 'css'],
-    link: 'https://generate-memes-omega.vercel.app/'
-  },
-  {
-    id: '5',
     title: 'BiteBuddy',
     image: biteBuddyImage,
     summary: 'React-based meal ordering app for convenient food delivery.',
@@ -62,12 +46,28 @@ export const projects: Project[] = [
     link: 'https://order-meal.vercel.app/'
   },
   {
-    id: '6',
+    id: '4',
+    title: 'Todo List',
+    image: todolistImage,
+    summary: 'Simple and efficient todo list application built with JavaScript.',
+    tags: ['javascript', 'html', 'css', 'localstorage'],
+    link: 'https://to-do-list-gilt-rho.vercel.app/'
+  },
+  {
+    id: '5',
     title: 'DevSpace',
     image: devspaceImage,
     summary: 'JavaScript-powered blog application for developers to share insights.',
     tags: ['javascript', 'html', 'css', 'markdown'],
     link: 'https://blog-application-theta-five.vercel.app/'
+  },
+  {
+    id: '6',
+    title: 'Meme Generator',
+    image: memeGeneratorImage,
+    summary: 'Create custom memes easily with this JavaScript and TypeScript app.',
+    tags: ['javascript', 'typescript', 'html', 'css'],
+    link: 'https://generate-memes-omega.vercel.app/'
   },
 ];
 

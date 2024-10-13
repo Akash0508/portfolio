@@ -46,7 +46,7 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className="w-full bg-white dark:bg-black border-y border-gray-200 dark:border-gray-800">
-      <div className="w-full md:w-[53%] mx-auto px-4">
+      <div className="w-full md:w-[62%] mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <button
@@ -120,14 +120,16 @@ const Navbar: React.FC = () => {
             </label>
           </div>
         </div>
-        {isMenuOpen && (
-          <div className="md:hidden">
-            <NavLink to="/">Home</NavLink>
-            <NavLink to="/about">About</NavLink>
-            <NavLink to="/blog">Blogs</NavLink>
-            <NavLink to="/projects">Projects</NavLink>
-          </div>
-        )}
+        <div 
+          className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
+            isMenuOpen ? "max-h-60" : "max-h-0"
+          }`}
+        >
+          <NavLink to="/">Home</NavLink>
+          <NavLink to="/about">About</NavLink>
+          <NavLink to="/blog">Blogs</NavLink>
+          <NavLink to="/projects">Projects</NavLink>
+        </div>
       </div>
     </nav>
   );

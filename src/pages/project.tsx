@@ -35,7 +35,7 @@ export const projects: Project[] = [
     image: portfolioImage,
     summary: 'Personal portfolio website showcasing projects and skills using React.',
     tags: ['react', 'javascript', 'css', 'responsive'],
-    link: '#' // Replace with your portfolio link when available
+    link: 'https://priyansh-singh.vercel.app/'
   },
   {
     id: '3',

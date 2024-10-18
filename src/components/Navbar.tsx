@@ -4,6 +4,7 @@ import {
   FaInstagram,
   FaTwitter,
   FaGithub,
+  FaLinkedin,
   FaMoon,
   FaSun,
   FaBars,
@@ -72,6 +73,14 @@ const Navbar: React.FC = () => {
             </div>
           </div>
           <div className="flex items-center space-x-4">
+            <a
+              href="https://www.linkedin.com/in/priyansh-s-435504173/"
+              className="text-gray-800 dark:text-white hover:text-gray-600 dark:hover:text-gray-300"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin />
+            </a>
             <a
               href="https://github.com/leviackerman05"
               className="text-gray-800 dark:text-white hover:text-gray-600 dark:hover:text-gray-300"

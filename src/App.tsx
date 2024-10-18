@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
+import Layout from './components/Layout';
 import Home from './pages/home';
 import About from './pages/about';
 import Blog from './pages/blog';
@@ -17,13 +18,15 @@ const App: React.FC = () => {
   return (
     <Router>
       <PageTitle />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/blog/:id" element={<FullBlogPost />} />
-        <Route path="/projects" element={<Projects />} />
-      </Routes>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:id" element={<FullBlogPost />} />
+          <Route path="/projects" element={<Projects />} />
+        </Routes>
+      </Layout>
     </Router>
   );
 }

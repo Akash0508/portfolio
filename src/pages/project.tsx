@@ -1,9 +1,4 @@
 import React from 'react';
-import Header from '../components/Header';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
-
-// Import images
 import resumateImage from '../assets/Resumate.png';
 import portfolioImage from '../assets/my-portfolio.png';
 import todolistImage from '../assets/todolist.png';
@@ -72,41 +67,33 @@ export const projects: Project[] = [
 ];
 
 const Projects: React.FC = () => {
-    return (
-      <div className="min-h-screen bg-gray-100 dark:bg-black text-gray-800 dark:text-white">
-        <Header />
-        <Navbar />
-        <main className="max-w-full md:max-w-4xl mx-auto px-4 md:px-6 py-8">
-          <h1 className="text-3xl md:text-4xl font-bold mb-8">Projects</h1>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-            {projects.map((project) => (
-              <a 
-                key={project.id} 
-                href={project.link} 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="block bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-[1.02]"
-              >
-                <img src={project.image} alt={project.title} className="w-full h-48 object-cover" />
-                <div className="p-4">
-                  <h2 className="text-xl font-semibold mb-2">{project.title}</h2>
-                  <p className="text-gray-600 dark:text-gray-300 mb-4">{project.summary}</p>
-                  <div className="flex flex-wrap gap-2">
-                    {project.tags.map((tag, index) => (
-                      <span key={index} className="text-sm text-blue-600 dark:text-blue-400">#{tag}</span>
-                    ))}
-                  </div>
-                </div>
-              </a>
-            ))}
-          </div>
-        </main>
-        <Footer />
+  return (
+    <div className="max-w-4xl mx-auto px-4">
+      <h1 className="text-3xl md:text-4xl font-bold mb-8">Projects</h1>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+        {projects.map((project) => (
+          <a 
+            key={project.id} 
+            href={project.link} 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="block bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-[1.02]"
+          >
+            <img src={project.image} alt={project.title} className="w-full h-48 object-cover" />
+            <div className="p-4">
+              <h2 className="text-xl font-semibold mb-2">{project.title}</h2>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">{project.summary}</p>
+              <div className="flex flex-wrap gap-2">
+                {project.tags.map((tag, index) => (
+                  <span key={index} className="text-sm text-blue-600 dark:text-blue-400">#{tag}</span>
+                ))}
+              </div>
+            </div>
+          </a>
+        ))}
       </div>
-    );
-  };
+    </div>
+  );
+};
 
 export default Projects;
-
-
-

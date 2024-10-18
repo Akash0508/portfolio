@@ -6,16 +6,16 @@ const usePageTitle = (pathname: string, defaultTitle: string) => {
 
     switch (pathname) {
       case '/':
-        title = 'Home | ' + defaultTitle;
+        title = 'Home';
         break;
       case '/about':
-        title = 'About | ' + defaultTitle;
+        title = 'About';
         break;
       case '/blog':
-        title = 'Blog | ' + defaultTitle;
+        title = 'Blog';
         break;
       case '/projects':
-        title = 'Projects | ' + defaultTitle;
+        title = 'Projects';
         break;
       default:
         title = defaultTitle;

@@ -73,8 +73,6 @@ const FullBlogPost: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-gray-100 dark:bg-black text-black dark:text-white">
-      <Header />
-      <Navbar />
       <main className="max-w-4xl mx-auto px-4 py-8">
         <div className="flex justify-between items-center mb-4">
           <h1 className="text-4xl font-bold">{post.title}</h1>
@@ -153,7 +151,6 @@ const FullBlogPost: React.FC = () => {
           ))}
         </div>
       </main>
-      <Footer />
     </div>
   );
 };

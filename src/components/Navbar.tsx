@@ -10,22 +10,31 @@ import {
   FaTimes,
 } from "react-icons/fa";
 
+const useDarkMode = () => {
+  const [darkMode, setDarkMode] = useState(() => {
+    const savedMode = localStorage.getItem("darkMode");
+    return savedMode ? JSON.parse(savedMode) : false;
+  });
+
+  useEffect(() => {
+    localStorage.setItem("darkMode", JSON.stringify(darkMode));
+    if (darkMode) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, [darkMode]);
+
+  return [darkMode, setDarkMode] as const;
+};
+
 const Navbar: React.FC = () => {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useDarkMode();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
 
-  useEffect(() => {
-    const isDarkMode = localStorage.getItem("darkMode") === "true";
-    setDarkMode(isDarkMode);
-    document.documentElement.classList.toggle("dark", isDarkMode);
-  }, []);
-
   const toggleDarkMode = () => {
-    const newDarkMode = !darkMode;
-    setDarkMode(newDarkMode);
-    localStorage.setItem("darkMode", newDarkMode.toString());
-    document.documentElement.classList.toggle("dark", newDarkMode);
+    setDarkMode(prevMode => !prevMode);
   };
 
   const toggleMenu = () => {
@@ -101,11 +110,12 @@ const Navbar: React.FC = () => {
                 />
                 <div className="w-10 h-4 bg-gray-600 dark:bg-gray-600 rounded-full shadow-inner"></div>
                 <div
-                  className={`absolute w-6 h-6 rounded-full shadow transition-transform duration-300 ease-in-out flex items-center -left-1 -top-1 justify-center ${
+                  className={`absolute w-6 h-6 rounded-full shadow transition-transform duration-300 ease-in-out flex items-center justify-center ${
                     darkMode
                       ? "translate-x-full bg-gray-300"
                       : "translate-x-0 bg-black"
                   }`}
+                  style={{ top: "-0.25rem", left: "-0.25rem" }}
                 >
                   {darkMode ? (
                     <FaSun className="text-black text-xs" />
@@ -114,9 +124,9 @@ const Navbar: React.FC = () => {
                   )}
                 </div>
               </div>
-              <div className="ml-3 text-gray-800 dark:text-white font-medium">
+              <span className="ml-3 text-gray-800 dark:text-white font-medium w-10">
                 {darkMode ? "Dark" : "Light"}
-              </div>
+              </span>
             </label>
           </div>
         </div>

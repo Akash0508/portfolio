@@ -38,7 +38,7 @@ export const projects: Project[] = [
         summary:
             'Personal portfolio website showcasing projects and skills using React.',
         tags: ['react', 'javascript', 'css', 'responsive'],
-        link: 'https://akash-singh.vercel.app/',
+        link: 'https://akash-singh-silk.vercel.app/',
     },
     {
         id: '4',

@@ -19,7 +19,7 @@ const PROJECTS = [
         image: portfolioImage,
         summary: 'Personal portfolio website using React.',
         tags: ['react', 'javascript', 'css', 'responsive'],
-        link: 'https://akash-singh.vercel.app/',
+        link: 'https://akash-singh-silk.vercel.app/',
     },
 ];
 
